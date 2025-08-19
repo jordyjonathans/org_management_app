@@ -1,0 +1,99 @@
+-- CREATE DATABASE org_management;
+-- USE notes_app;
+
+-- CREATE TABLE members (
+--     id integer PRIMARY KEY AUTO_INCREMENT,
+--     no_ktp VARCHAR(16) NOT NULL,
+--     nama VARCHAR(255) NOT NULL,
+--     no_hp VARCHAR(15) NOT NULL,
+--     pronvisi_id integer NOT NULL,
+--     kecamatan_id integer NOT NULL,
+--     kelurahan_id integer NOT NULL,
+--     kabupaten_id integer NOT NULL,
+--     created TIMESTAMP NOT NULL DEFAULT NOW()
+-- )
+
+-- CREATE TABLE districts(
+--     id integer PRIMARY KEY AUTO_INCREMENT,
+--     provinsi VARCHAR(255) NOT NULL,
+--     kabupaten VARCHAR(255) NOT NULL,
+--     kecamatan VARCHAR(255) NOT NULL,
+--     kelurahan VARCHAR(255) NOT NULL,
+--     created TIMESTAMP NOT NULL DEFAULT NOW()
+-- )
+
+-- INSERT INTO districts(provinsi,kabupaten,kecamatan,kelurahan) VALUES
+-- ('DKI Jakarta','Jakarta Pusat','Gambir','Gambir'),
+-- ('DKI Jakarta','Jakarta Pusat','Gambir','Kebon Kelapa'),
+-- ('DKI Jakarta','Jakarta Pusat','Gambir','Petojo Utara'),
+-- ('DKI Jakarta','Jakarta Pusat','Gambir','Petojo'),
+-- ('DKI Jakarta','Jakarta Pusat','Gambir','Cideng'),
+-- ('DKI Jakarta','Cengkareng','Tanah Abang',''),
+-- ('DKI Jakarta','Cengkareng','Tanah Abang',''),
+-- ('DKI Jakarta','Cengkareng','Tanah Abang',''),
+-- ('DKI Jakarta','Cengkareng','Tanah Abang',''),
+-- ('DKI Jakarta','Cengkareng','Tanah Abang',''),
+
+-- 7	DKI Jakarta	Kota	Jakarta Pusat	Tanah Abang	Bendungan Hilir	10210
+-- 8	DKI Jakarta	Kota	Jakarta Pusat	Tanah Abang	Karet Tengsin	10220
+-- 9	DKI Jakarta	Kota	Jakarta Pusat	Tanah Abang	Kebon Melati	10230
+-- 10	DKI Jakarta	Kota	Jakarta Pusat	Tanah Abang	Kebon Kacang	10240
+-- 11	DKI Jakarta	Kota	Jakarta Pusat	Tanah Abang	Kampung Bali	10250
+-- 12	DKI Jakarta	Kota	Jakarta Pusat	Tanah Abang	Petamburan	
+-- 13	DKI Jakarta	Kota	Jakarta Pusat	Tanah Abang	Gelora	
+-- 14	DKI Jakarta	Kota	Jakarta Pusat	Menteng	Menteng	10310
+-- 15	DKI Jakarta	Kota	Jakarta Pusat	Menteng	Pegangsaan	10320
+-- 16	DKI Jakarta	Kota	Jakarta Pusat	Menteng	Cikini	10330
+-- 17	DKI Jakarta	Kota	Jakarta Pusat	Menteng	Kebon Sirih	10340
+-- 18	DKI Jakarta	Kota	Jakarta Pusat	Menteng	Gondangdia	10350
+-- 19	DKI Jakarta	Kota	Jakarta Pusat	Senen	Senen	10410
+-- 20	DKI Jakarta	Kota	Jakarta Pusat	Senen	Kwitang	10420
+-- 21	DKI Jakarta	Kota	Jakarta Pusat	Senen	Kenari	10430
+-- 22	DKI Jakarta	Kota	Jakarta Pusat	Senen	Paseban	10440
+-- 23	DKI Jakarta	Kota	Jakarta Pusat	Senen	Kramat	10450
+-- 24	DKI Jakarta	Kota	Jakarta Pusat	Senen	Bungur	10460
+-- 25	DKI Jakarta	Kota	Jakarta Pusat	Cempaka Putih	Cempaka Putih Timur	10510
+-- 26	DKI Jakarta	Kota	Jakarta Pusat	Cempaka Putih	Cempaka Putih Barat	10520
+-- 27	DKI Jakarta	Kota	Jakarta Pusat	Johar Baru	Galur	10530
+-- 28	DKI Jakarta	Kota	Jakarta Pusat	Johar Baru	Tanah Tinggi	10540
+-- 29	DKI Jakarta	Kota	Jakarta Pusat	Johar Baru	Kampung Rawa	10550
+-- 30	DKI Jakarta	Kota	Jakarta Pusat	Johar Baru	Johar Baru	10560
+-- 31	DKI Jakarta	Kota	Jakarta Pusat	Cempaka Putih	Rawasari	10570
+-- 32	DKI Jakarta	Kota	Jakarta Pusat	Kemayoran	Gunung Sahari Selatan	10610
+-- 33	DKI Jakarta	Kota	Jakarta Pusat	Kemayoran	Kemayoran	10620
+-- 34	DKI Jakarta	Kota	Jakarta Pusat	Kemayoran	Kebon Kosong	10630
+-- 35	DKI Jakarta	Kota	Jakarta Pusat	Kemayoran	Cempaka Baru	10640
+-- 36	DKI Jakarta	Kota	Jakarta Pusat	Kemayoran	Harapan Mulya	10640
+-- 37	DKI Jakarta	Kota	Jakarta Pusat	Kemayoran	Sumur Batu	10640
+-- 38	DKI Jakarta	Kota	Jakarta Pusat	Kemayoran	Serdang	10650
+-- 39	DKI Jakarta	Kota	Jakarta Pusat	Kemayoran	Utan Panjang	10650
+-- 40	DKI Jakarta	Kota	Jakarta Pusat	Sawah Besar	Pasar Baru	10710
+-- 41	DKI Jakarta	Kota	Jakarta Pusat	Sawah Besar	Gunung Sahari Utara	10720
+-- 42	DKI Jakarta	Kota	Jakarta Pusat	Sawah Besar	Mangga Dua Selatan	10730
+-- 43	DKI Jakarta	Kota	Jakarta Pusat	Sawah Besar	Karang Anyar	10740
+-- 44	DKI Jakarta	Kota	Jakarta Pusat	Sawah Besar	Kartini	10750
+
+-- ('Admin Provinsi'),
+-- ('Admin Kabupaten'),
+-- ('Admin Kecamatan'),
+-- ('Admin Kelurahan')
+
+-- CREATE TABLE users (
+--     id integer PRIMARY KEY AUTO_INCREMENT,
+--     username VARCHAR(255) NOT NULL,
+--     password VARCHAR(255) NOT NULL,
+--     role_id integer NOT NULL,
+--     created TIMESTAMP NOT NULL DEFAULT NOW()
+-- )
+
+
+-- CREATE TABLE roles(
+--     id integer PRIMARY KEY AUTO_INCREMENT,
+--     role_name VARCHAR(255) NOT NULL,
+-- )
+-- INSERT INTO roles(role_name) VALUES
+-- ('Admin Pusat'),
+-- ('Admin Provinsi'),
+-- ('Admin Kabupaten'),
+-- ('Admin Kecamatan'),
+-- ('Admin Kelurahan')
